@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/3c93b017a4.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="enter-city" id="enterCity">
+        <div class="search-cities">
+          <input
+            type="text"
+            placeholder="Enter a city"
+            class="form-control"
+            id="showCity"
+          />
+        </div>
+        <input type="image" src="media/search.svg.svg" class="localization-img" style="filter:none"/>
+        <input type="image" id = "btnCurrent" src="media/localization.svg.svg" class="search-img" style="filter:none"/>
+     </form>
+     <span class="line-top">
+     </span>
+     </br>
+
+     <div class="weather-info">
+        <div class= "weather row">
+          <div class="current left col-6">
+             <h1 class="city" id="current-city">
+                Warsaw
+             </h1>
+           <div class="temperature">
+              <span class="current-temperature" id="temperature"> 
+               28   
+              </span>
+              <span class="celsius">
+              °C
+              </span>
+           </div>
+            <ul class="extra" style="color:black;">
+              <li> Humidity: 
+              <span id="humidity"> 
+              </span>%
+              </li>
+              <li> Windy: 
+              <span id="wind">
+              </span>
+              km/h
+              </li>
+            </ul>  
+          </div>
+          <div class="current right col-6">
+            <ul class="more-info">
+              <li class="day-time" id="dayTime">
+                Sunday, 13:55
+              </li>
+              <li class="weather-description" id="description">
+             Sunny
+              </li>
+            </ul>
+            <img id="icon" src="media/Sunny.svg" class="weather-img" />
+          </div>
+        </div>
+      </div>
+     <div class="forecast">
+  <div class="row">
+    <div class="col">
+      Monday
+    </div>
+    <div class="col">
+      Tuesday
+    </div>
+    <div class="col">
+      Wendesday
+    </div>
+    <div class="col">
+      Thursday
+    </div>
+    <div class="col">
+      Friday
+    </div>
+  </div>
+</div>
+
+<p class="motivacional" id="message">
+
+There will be a motivational quote connected with current weather
+</p> 
+
+
+              
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
